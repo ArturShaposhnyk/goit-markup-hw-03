@@ -1,6 +1,7 @@
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 h1,
 h2,
@@ -140,8 +141,8 @@ body {
   border-radius: 4px;
 }
 
-.order-btn:hover,
-.order-btn:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: var(--backgr-btn);
 }
 
@@ -154,7 +155,7 @@ body {
   color: var(--backgr-color);
   background-color: var(--dark-bgr);
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
 }
 
 .designation-title {
@@ -168,6 +169,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .advantage-title {
   font-weight: 700;
@@ -175,6 +189,17 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.advantage-list {
+  display: flex;
+  gap: 24px;
+}
+.adv-qual {
+  justify-content: left;
+  width: calc((100%-72px) / 4);
 }
 
 .title-adv {
@@ -183,6 +208,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
+  margin-bottom: 8px;
 }
 .defin-adv {
   font-size: 16px;
@@ -191,46 +217,8 @@ body {
   line-height: 1.5;
 }
 
-.title-adv {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--ancillary-color);
-}
-.defin-adv {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-
-  line-height: 1.5;
-}
-
-.title-adv {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--ancillary-color);
-}
-.defin-adv {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-
-  line-height: 1.5;
-}
-
-.title-adv {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--ancillary-color);
-}
-.defin-adv {
-  font-size: 16px;
-  letter-spacing: 0.02em;
-
-  line-height: 1.5;
+.ourwork {
+  padding-bottom: 120px;
 }
 
 .ourwork-title {
@@ -242,8 +230,12 @@ body {
   color: var(--ancillary-color);
 }
 
-.employ {
-  background-color: var(--log-stud-col);
+.ourwork-list {
+  display: flex;
+  gap: 24px;
+}
+.ourwork-art {
+  width: calc((100% - 48px) / 3);
 }
 
 .employ-title {
@@ -254,14 +246,27 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
+  padding-top: 120px;
 }
 
 .employ-list {
-  background-color: var(--backgr-color);
+  display: flex;
+  gap: 24px;
+  background-color: var(--log-stud-col);
 }
 
 .employ-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--backgr-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.empl-card {
+  padding: 32px 16px;
 }
 
 .empl {
@@ -270,15 +275,20 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
+  text-align: center;
+  margin-bottom: 8px;
 }
 .empl-prof {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  text-align: center;
 }
 
 .footerclass {
   background: var(--dark-bgr);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footerclass-txt {
@@ -286,9 +296,15 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   color: var(--log-stud-col);
+  width: 264px;
 }
 
 /*Portfolio*/
+
+.fold {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .guide-button {
   font-family: "Roboto", sans-serif;
@@ -298,13 +314,16 @@ body {
   line-height: 1.5;
   color: var(--subsid-color);
   background-color: var(--log-stud-col);
-
+  padding: 12px 24px;
   text-align: center;
   letter-spacing: 0.04em;
+  border: 1px solid var(--fold-btn-color);
+  border-radius: 4px;
 }
 
 .guide-button:hover,
 .guide-button:focus {
+  border: 1px solid transparent;
   color: var(--backgr-color);
   background-color: var(--backgr-btn);
 }
@@ -315,10 +334,35 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
+  padding-left: 16px;
 }
 
 .specification-p {
   letter-spacing: 0.02em;
   color: var(--body-color);
   line-height: 1.5;
+  padding-left: 16px;
+}
+
+.button-list {
+  display: flex;
+  margin: 96px auto 72px auto;
+  justify-content: center;
+  gap: 24px;
+}
+
+.all-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  margin-bottom: 114px;
+}
+
+.all-cont-posit {
+}
+
+.qwer {
+  border: 1px solid var(--fold-btn-color);
+  border-top: none;
+  padding: 32px 16px;
 }
