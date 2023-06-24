@@ -124,6 +124,17 @@ body {
   color: var(--backgr-btn);
 }
 
+.title-posit {
+  margin-bottom: 72px;
+}
+.card-title-posit {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+.card-txt-posit {
+  margin-bottom: 32px;
+}
+
 .order-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
