@@ -260,6 +260,7 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: var(--ancillary-color);
+  margin-bottom: 72px;
 }
 
 .ourwork-list {
@@ -285,6 +286,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
   padding-top: 120px;
+  margin-bottom: 72px;
 }
 
 .employ-list {
