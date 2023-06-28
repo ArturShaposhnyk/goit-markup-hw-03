@@ -30,7 +30,7 @@ img {
 
 .container {
   width: 1158px;
-  margin: 0 auto;
+  padding: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -49,7 +49,7 @@ img {
   overflow: hidden;
 }
 
-.title-posit {
+.title-position {
   margin-bottom: 72px;
 }
 .card-title-posit {
