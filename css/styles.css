@@ -49,9 +49,6 @@ img {
   overflow: hidden;
 }
 
-.title-position {
-  margin-bottom: 72px;
-}
 .card-title-posit {
   margin-top: 32px;
   margin-bottom: 8px;
@@ -215,16 +212,6 @@ body {
   padding-bottom: 120px;
 }
 
-.advantage-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: var(--ancillary-color);
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
 .advantage-list {
   display: flex;
   gap: 24px;
