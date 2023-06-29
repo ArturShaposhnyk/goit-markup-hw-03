@@ -109,8 +109,6 @@ body {
 .page-header-container {
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 
 .page-footer-container {
@@ -137,6 +135,7 @@ body {
   color: var(--ancillary-color);
   padding-top: 24px;
   padding-bottom: 24px;
+  display: inline-block;
 }
 .menu-link:hover,
 .menu-link:focus {
