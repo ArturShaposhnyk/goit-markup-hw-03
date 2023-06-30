@@ -50,11 +50,11 @@ img {
 }
 
 .card-title-posit {
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 .card-txt-posit {
-  margin-bottom: 32px;
+  margin-bottom: 0;
 }
 
 .logo {
@@ -67,6 +67,16 @@ img {
   letter-spacing: 0.03em;
   color: var(--subsid-color);
   margin-right: 76px;
+}
+.logo-footer {
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--subsid-color);
   margin-bottom: 16px;
 }
 
@@ -109,8 +119,6 @@ body {
 }
 
 .page-footer-container {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .page-nav {
@@ -168,14 +176,13 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.5;
   color: var(--backgr-color);
-
   padding: 16px 32px;
   min-width: 169px;
   background: var(--subsid-color);
-
   height: 56px;
   border: none;
   border-radius: 4px;
+  margin: 0 auto;
 }
 
 .order-button:hover,
@@ -203,7 +210,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--backgr-color);
   text-align: center;
-
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -218,7 +225,7 @@ body {
 }
 .adv-qual {
   justify-content: left;
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .title-adv {
@@ -271,7 +278,6 @@ body {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
@@ -282,9 +288,7 @@ body {
 }
 
 .employ-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: calc((100% - 72px) / 4);
   background-color: var(--backgr-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -360,19 +364,18 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--ancillary-color);
-  padding-left: 16px;
 }
 
 .specification-p {
   letter-spacing: 0.02em;
   color: var(--body-color);
   line-height: 1.5;
-  padding-left: 16px;
 }
 
 .button-list {
   display: flex;
-  margin: 96px auto 72px auto;
+  margin: 72px;
+  margin-top: 0;
   justify-content: center;
   gap: 24px;
 }
@@ -381,11 +384,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
-  margin-bottom: 114px;
 }
 
 .qwer {
   border: 1px solid var(--fold-button-color);
   border-top: none;
   padding: 32px 16px;
+}
+.all-cont-posit {
+  width: calc((100% - 48px) / 3);
 }
